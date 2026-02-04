@@ -12,19 +12,19 @@ base_info:
   primary_color: "#0066cc"
 
   # Blog website title
-  title: Keep Theme
+  title: Akun's Blog
 
   # Blog website author name
-  author: Keep Team
+  author: Akun
 
   # Author avatar, You can use local image path or image link
-  avatar: /images/avatar.svg
+  avatar: /images/avatar.png
 
   # Website LOGO, You can use local image path or image link
-  logo: /images/logo.svg
+  logo: /images/avatar.png
 
   # Website favicon, You can use local image path or image link
-  favicon: /images/logo.svg
+  favicon: /images/avatar.png
 
 
 # ---------------------------------------------------------------------------------------
@@ -49,7 +49,7 @@ menu:
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/first_screen.html
 # ---------------------------------------------------------------------------------------
 first_screen:
-  enable: false  # Option values: true | false
+  enable: true  # Option values: true | false
 
   # First screen background image in light mode, You can use local image path or image link
   background_img: /images/bg.svg
@@ -59,7 +59,7 @@ first_screen:
 
   # First screen description
   # You can use the "||" to begin a newline, maximum is two lines.
-  description: Keep writing and Keep loving.
+  description: 我自清风来
 
   # If enable hitokoto, first screen description is different every time when you enter the website
   hitokoto: false      # Option values: true | false
@@ -69,21 +69,21 @@ first_screen:
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/social_contact.html
 # ---------------------------------------------------------------------------------------
 social_contact:
-  enable: false      # Option values: true | false
+  enable: true      # Option values: true | false
   links:
     # Fill in your social platform links here, e.g. `github: https://github.com/XPoet`
     # If you want to click open the picture, you need to add a prefix `img | `,
     # at the same time change your link to the image link.
     # e.g. `weixin: img | ./images/qrcode.png`
-    github:          # GitHub
-    weixin:          # WeChat
-    qq:              # QQ
-    weibo:           # WeiBo
-    zhihu:           # ZhiHu
-    twitter:         # Twitter
-    x:               # X
-    facebook:        # Facebook
-    email:           # Email
+    github: https://github.com/akun533          # GitHub
+#    weixin:          # WeChat
+#    qq:              # QQ
+#    weibo:           # WeiBo
+#    zhihu:           # ZhiHu
+#    twitter:         # Twitter
+#    x:               # X
+#    facebook:        # Facebook
+    email: akun533@hotmail.com          # Email
 
 
 # ---------------------------------------------------------------------------------------
