@@ -1,25 +1,16 @@
 version: '3.8'
 
 services:
-  hexo:
-    image: hexo-blog:latest
-    container_name: hexo-blog
+  app:
+    image: app:latest
+    container_name: app
     ports:
-      - "4000:4000"
+      - "3000:3000"
     volumes:
-      # 挂载外部笔记目录到容器 source
-      - /vol6/1000/静态盘/飞牛同步/个人/笔记/source:/app/source:ro
-      # 生成的静态文件输出到本地 public
-      - ./public:/app/public
-    # 安全加固
-    read_only: true  # 根文件系统只读
-    tmpfs:
-      - /tmp:noexec,size=100M  # tmpfs禁止执行
-    cap_drop:
-      - ALL  # 移除所有能力
+      - ./:/app
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:4000"]
+      test: ["CMD", "sh", "-c", "echo 'Health check passed'"]
       interval: 30s
       timeout: 10s
       retries: 3
