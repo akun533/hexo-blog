@@ -12,5 +12,5 @@ RUN npm install --production && npm cache clean --force
 # 复制整个项目
 COPY . .
 
-# 使用默认用户运行
-CMD ["sh", "-c", "node -v && npm -v && echo 'Application ready'"]
+# 监听文件变化，自动生成
+CMD ["sh", "-c", "npm hexo generate --watch & npm hexo server -l 0.0.0.0"]
