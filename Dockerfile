@@ -11,4 +11,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["npm", "run", "server"]
+CMD ["npx", "hexo", "server", "--watch"]
